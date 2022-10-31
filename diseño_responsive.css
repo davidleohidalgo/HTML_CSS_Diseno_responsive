@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    font-size: 2rem;
+}
+
+
+.nav-late {
+    background-color: blue;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav-late span {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+.principal{
+   background-color: aqua;
+   flex-grow: 1;
+   padding: 2rem;  
+}
+
+@media (max-width:640px) {
+    body {
+        flex-direction: column-reverse;
+    }
+
+    .nav-late {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+}
+
+
